@@ -53,13 +53,19 @@ auto clipToGround = [](auto const& o) {
 }
 
 auto simulationStep = compose(move, applyGravity, clipToGround );
+using Drawable = decltype( mix( Position{}, Image{} ) );
+
+auto draw( Drawable const& obj) { std::cout << obj.y << std::endl; };
 
 while(bird.y!=0) {
-  std::cout << bird.y << std::endl;
+  draw(obj);
   bird = simulationStep(bird);
 } // prints 10 , 20 , 10 , 0
 
-//... in case you have many iterable objects:
+```
+
+In case you have many iterable objects:
+```c++
 
 using Object = decltype(mix(Position{}, Speed{}, Image{}));
 
