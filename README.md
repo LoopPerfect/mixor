@@ -59,6 +59,19 @@ while(bird.y!=0) {
   bird = simulationStep(bird);
 } // prints 10 , 20 , 10 , 0
 
+//... in case you have many iterable objects:
+
+using Object = decltype(mix(Position{}, Speed{}, Image{}));
+
+std::vector<Object> objects;
+
+auto simulationStepforAll = compose( 
+  map(move), 
+  map(applyGravity), 
+  map(clipToGround) 
+); //or map(compose(move, applyGravity, clipToGround));
+  
+objects = simulationStepforAll(objects);
 
 ```
 
