@@ -2,6 +2,7 @@
 functional template library 
 
 The goal of this minimalistic library is to provide tools to compose and transform data in a declarative way.
+
 It relies on functional concepts and data-driven design.
 
 ```c++
@@ -82,5 +83,5 @@ objects = simulationStepforAll(objects);
 ```
 
 You can see it in action:
-https://github.com/LoopPerfect/boids
-https://www.youtube.com/watch?v=viVroGmeQDw
+- https://github.com/LoopPerfect/boids
+- https://www.youtube.com/watch?v=viVroGmeQDw
