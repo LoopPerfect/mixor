@@ -1,7 +1,7 @@
 # mixor
 functional template library 
 
-The goal of this minimalistic library is to provide tools to compose and transform data in a declarative way.
+The goal of this minimalistic library is to provide tools to compose and transform data in a declarative way. Using templates, this is implemented with zero run-time overhead.
 
 It relies on functional concepts and data-driven design.
 
