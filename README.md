@@ -4,7 +4,7 @@ functional template library
 The goal of this minimalistic library is to provide tools to compose and transform data in a declarative way.
 It relies on functional concepts and data-driven design.
 
-```
+```c++
 #include "mixin.hpp"
 #include "compose.hpp"
 #include <string>
